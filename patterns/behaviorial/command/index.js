@@ -4,8 +4,16 @@
 * This module holds all the commands to demo multiple design patterns
 * */
 var utils = require("/utils"),
-    commands = require("./commandConfigs"),
-    Interface = utils.Interface;
+    Interface = utils.Interface,
+    dummyCommandConfig= {
+        _value: "DummyValue",
+        actions: {
+            execute: function(){
+                return "I am a " + this._value;
+            }
+        }
+    };
+
 
 module.exports = (function(){
 
@@ -19,7 +27,7 @@ module.exports = (function(){
 
     return {
         //TemplateCommand: _TemplateCommand,
-        dummyCommand: new _Command(commands.dummy)
+        DummyCommand: new _Command(dummyCommandConfig)
     }
 
-})();
+});
