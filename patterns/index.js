@@ -1,7 +1,7 @@
 "use strict";
 
-module.exports = function(){
-    var _behavorial = require("./behavorial"),
+module.exports = (function(){
+    var _behavorial = require("./behaviorial"),
         _creational = require("./creational"),
         _structural = require("./structural");
 
@@ -12,4 +12,4 @@ module.exports = function(){
         dummyC  : _creational.dummy,
         dummyS  : _structural.dummy
     }
-};
+})();
