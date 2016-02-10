@@ -1,6 +1,6 @@
 "use strict"
 
-module.exports = function(){
+module.exports = (function(){
 
     var _dummy= {
         _value: "DummyValue",
@@ -13,4 +13,4 @@ module.exports = function(){
     return {
         dummy: _dummy
     }
-}
+})();
