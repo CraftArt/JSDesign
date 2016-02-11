@@ -3,10 +3,10 @@
 module.exports = (function(){
 
     var _dummy= {
-        _value: "DummyValue",
+        value: "DummyValue",
         actions: {
             execute: function(){
-                return "I am a " + this._value;
+                return "I am a " + this.value;
             }
         }
     };
