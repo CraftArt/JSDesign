@@ -3,7 +3,7 @@
 /*global module, require*/
 var express = require('express');
 var router = express.Router();
-var patterns = require('root/patterns');
+var patterns = require('app/patterns');
 var dummyCom = patterns.command.dummyCommand;
 var publisher = patterns.publisher;
 var subscriber = patterns.subscriber;
