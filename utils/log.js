@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
 module.exports = (function(){
-    var _log = "";
+    var _log = '';
     var _add = function(msg){
-        _log += msg + "\n";
+        _log += msg + '\n';
     }
 
     var _show = function(){

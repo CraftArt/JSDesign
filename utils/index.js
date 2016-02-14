@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
 module.exports = (function(){
-    var _logger = require("./log");
-    var _interface = require("./helpers/Interface");
+    var _logger = require('./log');
+    var _interface = require('./helpers/Interface');
 
     return {
         logger: _logger,

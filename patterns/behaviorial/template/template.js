@@ -1,5 +1,5 @@
-"use strict"
-var utils = require("/utils");
+'use strict'
+var utils = require('/utils');
 
 module.exports = ((function(){
     //var

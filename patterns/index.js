@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 module.exports = (function(){
-    var _behavorial = require("./behaviorial"),
-        _creational = require("./creational"),
-        _structural = require("./structural"),
-        _pubsub = require("./pubsub");
+    var _behavorial = require('./behaviorial'),
+        _creational = require('./creational'),
+        _structural = require('./structural'),
+        _pubsub = require('./pubsub');
 
     return{
         command     : _behavorial.command,

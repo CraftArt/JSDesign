@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var patterns = require("root/patterns");
+var patterns = require('root/patterns');
 var dummyCom= patterns.command.dummyCommand;
 /* GET users listing. */
 router.get('/', function(req, res, next) {

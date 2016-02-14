@@ -1,10 +1,10 @@
-"use strict"
+'use strict'
 
-var utils = require("root/utils"),
+var utils = require('root/utils'),
     Interface = utils.Interface;
 
 //Command Interface enforcing execute method implementation
-var _CommandInterface = new Interface("_CommandInterface", ["execute"]);
+var _CommandInterface = new Interface('_CommandInterface', ['execute']);
 
 var _Command = function(commandConfig){
     if(commandConfig === undefined){

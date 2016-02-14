@@ -1,12 +1,12 @@
-"use strict"
+'use strict';
 
 module.exports = (function(){
 
     var _dummy= {
-        value: "DummyValue",
+        value: 'DummyValue',
         actions: {
             execute: function(){
-                return "I am a " + this.value;
+                return 'I am a ' + this.value;
             }
         }
     };

@@ -1,16 +1,16 @@
-"use strict";
+'use strict';
 
 module.exports = (function(){
 
-    var Publisher = require("./Publisher"),
-        Subscriber = require("./Subscriber");
+    var Publisher = require('./Publisher'),
+        Subscriber = require('./Subscriber');
 
     var _publisher = new Publisher(),
         _subscriber = new Subscriber();
 
 
     return{
-        publisher: _publisher,
-        subscriber: _subscriber
+        publisher   : _publisher,
+        subscriber  : _subscriber
     };
 })();
