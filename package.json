@@ -27,5 +27,5 @@
   "devDependencies": {
     "debug": "^2.1.3"
   },
-  "hsomepage": "https://github.com/CraftArt/JSDesign#readme"
+  "homepage": "https://github.com/CraftArt/JSDesign#readme"
 }
