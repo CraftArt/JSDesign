@@ -1,5 +1,4 @@
 .idea
-*.iml
 *.log
 node_modules/*
 !node_modules/root
