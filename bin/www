@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-/*global module, require*/
+/*global module, require, process*/
 /**
  * Module dependencies.
  */

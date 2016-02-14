@@ -9,19 +9,19 @@ var publisher = patterns.publisher;
 var subscriber = patterns.subscriber;
 
 /* GET demo listing. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
     res.send('respond with a resource');
 });
 
-router.get('/command', function(req, res, next){
+router.get('/command', function(req, res){
     res.send(dummyCom.execute());
 });
 
-router.get('/publish', function(req, res, next){
+router.get('/publish', function(req, res){
     res.send(publisher.publish('testPub'));
 });
 
-router.get('/subscribe', function(req, res, next){
+router.get('/subscribe', function(req, res){
     res.send(subscriber.subscribe('testPub', function(dataFromPublisher){
         console.log('Subscribed successfully.');
     }));

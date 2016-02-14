@@ -25,7 +25,7 @@
     "camelcase": [2, {"properties": "always"}],
     "new-cap": [1, { "capIsNew": false }],
     "no-undef": 2,
-    "semi": [2, "always"],
+    "semi": [2, "always"]
   },
   "env": {
     "node": true,
@@ -34,6 +34,7 @@
   "globals": {
     "require": true,
     "module": true,
-    "__dirname": true
+    "__dirname": true,
+    "process": true
   }
 }
