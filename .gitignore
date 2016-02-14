@@ -1,5 +1,6 @@
 .idea
 *.log
-node_modules/*
-!node_modules/root
+node_modules
+#node_modules/*
+#!node_modules/root
 !.gitignore
