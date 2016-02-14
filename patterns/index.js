@@ -1,19 +1,20 @@
 'use strict';
 
+/*global module, require*/
 module.exports = (function(){
-    var _behavorial = require('./behaviorial'),
+    var _behavioural = require('./behavioural'),
         _creational = require('./creational'),
         _structural = require('./structural'),
         _pubsub = require('./pubsub');
 
     return{
-        command     : _behavorial.command,
-        template    : _behavorial.template,
+        command     : _behavioural.command,
+        template    : _behavioural.template,
 
         publisher   : _pubsub.publisher,
         subscriber  : _pubsub.subscriber,
 
         dummyC      : _creational.dummy,
         dummyS      : _structural.dummy
-    }
+    };
 })();

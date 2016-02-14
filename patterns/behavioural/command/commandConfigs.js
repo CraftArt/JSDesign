@@ -1,5 +1,6 @@
 'use strict';
 
+/*global module, require*/
 module.exports = (function(){
 
     var _dummy= {
@@ -10,7 +11,8 @@ module.exports = (function(){
             }
         }
     };
+
     return {
         dummy: _dummy
-    }
+    };
 })();

@@ -1,5 +1,6 @@
 'use strict';
 
+/*global module, require*/
 /*Usage:
 * var interface = new Interface('InterfaceName', ['methodA', 'methodB']);
 * var implementor = {
@@ -26,7 +27,7 @@
 
 var Interface = function(interfaceName, methods){
     if(arguments.length != 2){
-        throw new Error('Interface constructor called '+arguments.length+' arguments.');
+        throw new Error('Interface constructor called with '+arguments.length+' arguments.');
     }
 
     this.name = interfaceName;
@@ -38,7 +39,7 @@ var Interface = function(interfaceName, methods){
         }
         this.methods.push(methods[i]);
     }
-}
+};
 
 //Static method enforcing Implementation by the implementing object
 Interface.ensureImplements = function(object){
@@ -59,7 +60,7 @@ Interface.ensureImplements = function(object){
             }
         }
     }
-}
+};
 
 /*
 * Interface Constructor exported

@@ -1,5 +1,6 @@
-'use strict'
+'use strict';
 
+/*global module, require*/
 var utils = require('root/utils'),
     Interface = utils.Interface;
 

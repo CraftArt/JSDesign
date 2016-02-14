@@ -1,5 +1,6 @@
 'use strict';
 
+/*global module, require*/
 module.exports = (function(){
 
     var Publisher = require('./Publisher'),

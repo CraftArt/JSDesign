@@ -1,5 +1,6 @@
 'use strict';
 
+/*global module, require*/
 module.exports = (function(){
     var _logger = require('./log');
     var _interface = require('./helpers/Interface');
@@ -7,6 +8,6 @@ module.exports = (function(){
     return {
         logger: _logger,
         Interface: _interface
-    }
+    };
 
 })();

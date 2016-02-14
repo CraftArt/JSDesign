@@ -1,3 +1,6 @@
+'use strict';
+
+/*global module, require, router*/
 var express = require('express');
 var router = express.Router();
 var patterns = require('root/patterns');

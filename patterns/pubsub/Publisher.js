@@ -1,9 +1,10 @@
 'use strict';
 
+/*global module, require*/
 var Publisher = function Publisher() {
 
     var _cache = require('./cache');
-    var _publish = function (id) {
+    this.publish = function (id) {
         //Arguments not accessible as an array by using args
         var args = [].splice.call(arguments, 1);
 
@@ -19,8 +20,6 @@ var Publisher = function Publisher() {
             _cache[id][i].apply(null, args);
         }
     };
-
-    this.publish = _publish;
 };
 
 module.exports = Publisher;

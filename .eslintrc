@@ -5,7 +5,7 @@
     "generators": true
   },
   "rules": {
-    "strict": 0,
+    "strict": [2, "global"],
     "no-underscore-dangle": 0,
     "no-unused-vars": 0,
     "curly": 0,
@@ -20,10 +20,12 @@
     "new-parens": 0,
     "no-cond-assign": 0,
     "no-space-before-semi": 0,
+    "no-extra-semi": 0,
     "quotes": [2, "single", "avoid-escape"],
     "camelcase": [2, {"properties": "always"}],
     "new-cap": [1, { "capIsNew": false }],
-    "no-undef": 2
+    "no-undef": 2,
+    "semi": [2, "always"],
   },
   "env": {
     "node": true,
