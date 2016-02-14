@@ -4,14 +4,16 @@ module.exports = (function(){
     var _behavorial = require("./behaviorial"),
         _creational = require("./creational"),
         _structural = require("./structural"),
-        _general = require("./general");
+        _pubsub = require("./pubsub");
 
     return{
-        command : _behavorial.command,
-        template: _behavorial.template,
-        general: _general,
+        command     : _behavorial.command,
+        template    : _behavorial.template,
 
-        dummyC  : _creational.dummy,
-        dummyS  : _structural.dummy
+        publisher   : _pubsub.publisher,
+        subscriber  : _pubsub.subscriber,
+
+        dummyC      : _creational.dummy,
+        dummyS      : _structural.dummy
     }
 })();
