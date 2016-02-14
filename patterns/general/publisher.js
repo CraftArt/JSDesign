@@ -13,7 +13,7 @@ module.exports = (function () {
         }
 
         //
-        for (var i = 0, l1 = cache[id].length; i < l1; i++) {
+        for (var i = 0, length = cache[id].length; i < length; i++) {
             //This context is null, apply used as it takes an array of argument
             //so we need not worry about the argument structure as to how it might look like unlike call()
             cache[id][i].apply(null, args);
