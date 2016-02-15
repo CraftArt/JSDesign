@@ -1,7 +1,7 @@
 'use strict';
 
 /*global module, require*/
-var utils = require('app/utils'),
+var utils = require(appRoot + '/utils'),
     Interface = utils.Interface;
 
 //Command Interface enforcing execute method implementation
