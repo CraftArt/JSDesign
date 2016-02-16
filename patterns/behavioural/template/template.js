@@ -1,7 +1,7 @@
 'use strict';
 
 /*global module, require*/
-var utils = require('/utils');
+var utils = require(appRoot + '/utils');
 
 module.exports = ((function(){
     return {};
