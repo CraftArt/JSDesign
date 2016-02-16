@@ -1,4 +1,4 @@
-'use strict';
+N'use strict';
 
 /*global module, require*/
 module.exports = (function(){
