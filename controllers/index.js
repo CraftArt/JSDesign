@@ -14,16 +14,21 @@ module.exports = (function(){
     var _observerSubscribe = function(){
         //Subscriber list in publisher populated with subscriber id as "dummySubscriber"
         return subscriber.subscribe(publisher);
-    }
+    };
 
     var _observerEventPublish = function(){
         //Subscriber id set to "dummySubscriber" while subscriber instantiation
-        return publisher.publish("dummySubscriber");
-    }
+        return publisher.publish('dummySubscriber');
+    };
+
+    var _observerUnsubscribe = function(){
+        return subscriber.unsubscribe(publisher);
+    };
 
     return{
         dummyCommandOutput  : _dummyCommandOutput,
         publish             : _observerEventPublish,
-        subscribe           : _observerSubscribe
+        subscribe           : _observerSubscribe,
+        unsubscribe         : _observerUnsubscribe
     };
 })();

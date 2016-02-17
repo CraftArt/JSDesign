@@ -10,9 +10,9 @@ var Publisher = function Publisher(pubName) {
         if(!_subscriptionList[subscriber.id]){
             _subscriptionList[subscriber.id] = {};
             _subscriptionList[subscriber.id].update = subscriber.update;
-            return "Subscriber " + subscriber.id + ' registered with ' + this.id + 'publisher';
+            return 'Subscriber ' + subscriber.id + ' registered with ' + this.id + 'publisher';
         } else{
-            return "Subscriber " + subscriber.id + ' already listening to ' + this.id + 'publisher';
+            return 'Subscriber ' + subscriber.id + ' already listening to ' + this.id + 'publisher';
         }
     };
 
@@ -26,7 +26,6 @@ var Publisher = function Publisher(pubName) {
 
     this.publish = function publish(id) {
         //Arguments not accessible as an array by using args
-        var args = [].splice.call(arguments, 1);
         if (!_subscriptionList[id]) {
             return 'Subscriber ' + id + ' not yet subscribed to '+ this.id;
         } else {
