@@ -6,11 +6,11 @@ var Subscriber = function Subscriber(subName, onEventCallback){
     this.update = onEventCallback;
 
     this.subscribe = function subscribe(publisher){
-        publisher.attach(this);
+        return publisher.attach(this);
     };
 
     this.unsubscribe = function unsubscribe(publisher){
-        publisher.detach(this);
+        return publisher.detach(this);
     };
 };
 

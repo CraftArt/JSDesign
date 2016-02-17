@@ -24,4 +24,9 @@ router.get('/subscribe', function(req, res){
     res.send( result );
 });
 
+router.get('/unsubscribe', function(req, res){
+    var result = controller.unsubscribe();
+    res.send(result);
+});
+
 module.exports = router;
