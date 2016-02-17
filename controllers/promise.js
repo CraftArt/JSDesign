@@ -1,9 +1,7 @@
 'use strict';
 
 /*global module, require, appRoot*/
-var Pact = require(appRoot + 'patterns').Promise;
-
-var promise = new Pact();
+var promise = require(appRoot + 'patterns/general').promise;
 
 setTimeout(function(){
     promise.resolve();

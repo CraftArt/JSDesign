@@ -1,7 +1,7 @@
 'use strict';
 
 /*global module, require*/
-var Pact = function(){
+var Pact = function Pact(){
 
     var status = 'progress',
         fail = [],
