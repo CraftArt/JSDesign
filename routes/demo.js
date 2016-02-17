@@ -1,30 +1,27 @@
 'use strict';
 
 /*global module, require*/
-var express = require('express');
-var router = express.Router();
-var patterns = require(appRoot + '/patterns');
-var dummyCom = patterns.command.dummyCommand;
-var publisher = patterns.publisher;
-var subscriber = patterns.subscriber;
+var express = require('express'),
+    router = express.Router(),
+    controller = require(appRoot + 'controllers');
 
 /* GET demo listing. */
 router.get('/', function(req, res) {
-    res.send('respond with a resource');
+    res.send('You have reached the GOF demo.');
 });
 
 router.get('/command', function(req, res){
-    res.send(dummyCom.execute());
+    res.send(controller.dummyCommandOutput);
 });
 
 router.get('/publish', function(req, res){
-    res.send(publisher.publish('testPub'));
+    var result = controller.publish();
+    res.send( result );
 });
 
 router.get('/subscribe', function(req, res){
-    res.send(subscriber.subscribe('testPub', function(dataFromPublisher){
-        console.log('Subscribed successfully.');
-    }));
+    var result = controller.subscribe();
+    res.send( result );
 });
 
 module.exports = router;
