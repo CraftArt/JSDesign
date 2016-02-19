@@ -4,7 +4,8 @@
 var patterns = require(appRoot + 'patterns'),
     dummyCom = patterns.command.dummyCommand,
     publisher = patterns.observer.publisher,
-    subscriber = patterns.observer.subscriber;
+    subscriber = patterns.observer.subscriber,
+    customPromise = require('./promise');
 
 module.exports = (function(){
 

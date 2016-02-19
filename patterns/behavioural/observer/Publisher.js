@@ -10,7 +10,7 @@ var Publisher = function Publisher(pubName) {
         if(!_subscriptionList[subscriber.id]){
             _subscriptionList[subscriber.id] = {};
             _subscriptionList[subscriber.id].update = subscriber.update;
-            return 'Subscriber ' + subscriber.id + ' registered with ' + this.id + 'publisher';
+            return 'Subscriber ' + subscriber.id + ' registered with ' + this.id + ' publisher';
         } else{
             return 'Subscriber ' + subscriber.id + ' already listening to ' + this.id + 'publisher';
         }
